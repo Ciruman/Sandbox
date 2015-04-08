@@ -4,7 +4,7 @@ A collection of interesting code classes.
 ## JavaFxEllipsisListCell
 
 Before:
-![alt tag](original.png)
+![alt tag](JavaFXEllipsisListCell/original.png)
 
 After:
-![alt tag](fixed.png)
+![alt tag](JavaFXEllipsisListCell/fixed.png)
