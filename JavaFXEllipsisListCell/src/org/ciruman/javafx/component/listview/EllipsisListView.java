@@ -20,10 +20,7 @@ package org.ciruman.javafx.component.listview;
 import java.util.UUID;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -49,31 +46,6 @@ public class EllipsisListView extends Application {
     }
     public static void main(String[] args) {
         launch(args);
-    }
-
-    private class EllipsisListCell extends ListCell<String> {
-
-        private final Label label = new Label();
-        private final StackPane pane;
-
-        private EllipsisListCell() {
-            pane = new StackPane();
-            pane.setStyle("-fx-border-color:red;");
-            pane.setMinWidth(0);
-            pane.setPrefWidth(1);
-            pane.getChildren().add(label);
-        }
-
-        @Override
-        protected void updateItem(String item, boolean empty) {
-            if (empty || item == null) {
-                setGraphic(null);
-                setText("");
-            } else {
-                label.setText(item);
-                setGraphic(pane);
-            }
-        }
     }
 
 }

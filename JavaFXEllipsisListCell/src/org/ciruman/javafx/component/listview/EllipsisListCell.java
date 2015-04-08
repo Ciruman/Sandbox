@@ -34,7 +34,6 @@ public class EllipsisListCell extends ListCell<String> {
 
     public EllipsisListCell() {
         pane = new StackPane();
-        pane.setStyle("-fx-border-color:red;");
         pane.setMinWidth(0);
         pane.setPrefWidth(1);
         pane.getChildren().add(label);
